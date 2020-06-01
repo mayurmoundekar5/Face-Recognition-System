@@ -4,7 +4,7 @@ import numpy as np
 import faceRecognition as fr
 
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
-face_recognizer.read('C:/Users/mayur/Data Science/Computer Vision/Face Recognition/trainingData.yml')
+face_recognizer.read('Computer Vision/Face Recognition/trainingData.yml')
 
 name={0:"Mayur",1:"Madhu",2:"Manoj",3:"Mona"}
 
