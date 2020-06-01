@@ -4,11 +4,11 @@ import numpy as np
 import faceRecognition as fr
 
 
-test_img=cv2.imread('C:/Users/mayur/Data Science/Computer Vision/Face/tester_img/Mona.jpg')
+test_img=cv2.imread('Computer Vision/Face/tester_img/Mayur.jpg')
 faces_detected,gray_img=fr.faceDetection(test_img)
 print("faces_detected:",faces_detected)
 
-faces,faceID=fr.labels_for_training_data('C:/Users/mayur/Data Science/Computer Vision/Face/trainingImages')
+faces,faceID=fr.labels_for_training_data('Computer Vision/Face/trainingImages')
 face_recognizer=fr.train_classifier(faces,faceID)
 face_recognizer.write('trainingData.yml')
 
